@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Amazon</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        
+            
+    </style>
+</head>
+<html>
+<body onload="valselected()" style="text-align: center;">
+
+<img src="amazon.png" height=150px style="padding: -10px;" alt="Amazon"><br>
+<h3 id="selectedItem" class="glyphicon glyphicon-shopping-cart text-success">Items - <span id="itemList" class="text-info"> </span> </h3>
+<h3 id="rndpayment"> Your Payment - $<span id="itempay"> </span> </h3>
+
+<lable class="lable" style="font-size: 30px;font-family: 'Times New Roman', Times, serif;"> Enter Items </lable>
+    <input class="input" style="font-size: 30px;" type="text" placeholder="Add Items" id="item" data-toggle="tooltip" title="! Minimum 3 Char"> <br> <br> <br> <br>
+    <label id="alert1" class="alert alert-warning" style="width:400px;">
+        
+    </label><br>
+<button class="glyphicon glyphicon-plus btn btn-info btn-lg" onclick="addItem()">&nbsp<span class="glyphicon glyphicon-arrow-right"></span><br>Item</button>
+<button class="glyphicon glyphicon-minus btn btn-danger btn-lg" onclick="removeItem()">&nbsp<span class="glyphicon glyphicon-arrow-right"></span><br>Remove</button>
+<button class="glyphicon glyphicon-plus btn btn-info btn-lg" onclick="firstadd()">&nbsp<span class="glyphicon glyphicon-arrow-left"></span><br>Item</button>
+<button class="glyphicon glyphicon-minus btn btn-danger btn-lg" onclick="firstremove()">&nbsp<span class="glyphicon glyphicon-arrow-left"></span><br>Remove</button>
+<button class="glyphicon glyphicon-usd btn btn-success btn-lg" onclick="randomPay()"><br>Payment</button>
+<button class="glyphicon glyphicon-ok btn btn-success btn-lg" onclick="chkvalidation()"><br>Validation</button>
+
+
+<script src="amazon.js"></script>
+
+</body>
+</html>
